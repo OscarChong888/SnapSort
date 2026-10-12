@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snap Sort | AI-Powered Food Scanner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Snap Sort Logo">
+        <span>Snap Sort</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="impact.html">Impact & Future</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">
+            <svg class="sun-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+
+            <svg class="moon-icon" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+            </svg>
+        </button>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content reveal">
+
+        <span class="eyebrow">
+            MOBILE APP PBL PROJECT
+        </span>
+
+        <h1>
+            Food,
+            <span>simplified.</span>
+        </h1>
+
+        <p>
+            Snap Sort is an AI-powered mobile application that helps
+            users scan food products, understand nutrition information,
+            and make sense of ingredients.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="project.html" class="btn primary">
+                Explore Snap Sort →
+            </a>
+
+            <a href="#problem" class="btn secondary">
+                Learn More
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>AI</strong>
+                <span>Recognition & explanation</span>
+            </div>
+
+            <div>
+                <strong>DATA</strong>
+                <span>Nutrition insights</span>
+            </div>
+
+            <div>
+                <strong>SECURITY</strong>
+                <span>Data protection</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="phone-container reveal">
+
+        <div class="phone">
+
+            <div class="phone-screen">
+
+                <h3>Snap Sort</h3>
+
+                <div class="scan-box">
+
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+
+                    <!--<span>SCAN FOOD</span>-->
+
+                        <img class="scan-box-food" src="assets/food-product.png">
+
+                </div>
+
+                <div class="result-preview">
+
+                    <small>AI RESULT</small>
+
+                    <h4>Product Information</h4>
+
+                    <p>
+                        Nutrition • Ingredients • Explanation
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROBLEM -->
+
+<section class="section" id="problem">
+
+    <div class="section-title reveal">
+
+        <span>01</span>
+
+        <h2>The Problem</h2>
+
+    </div>
+
+
+    <div class="two-column">
+
+        <div class="reveal">
+
+            <p class="large-text">
+                Understanding food labels can be difficult,
+                especially when users need information quickly.
+            </p>
+
+            <p class="muted">
+                Food packaging contains nutritional values and
+                ingredient lists, but consumers may not always
+                understand unfamiliar ingredients or know what
+                the information means.
+            </p>
+
+        </div>
+
+
+        <!-- IMAGE -->
+
+        <div class="visual-card reveal">
+
+            <img
+                src="assets/problem-shopping.jpg"
+                alt="Person shopping for food"
+            >
+
+            <!--<div class="image-caption">
+                Replace this with an image showing the problem,
+                such as a person comparing food products.
+            </div>-->
+
+        </div>
+
+    </div>
+
+
+    <div class="problem-statement-box reveal">
+
+        <div class="problem-icon">?</div>
+
+        <div>
+
+            <h3>Problem Statement</h3>
+
+            <p>
+                Many consumers find it difficult or time-consuming
+                to understand food ingredients and nutritional
+                information, which can lead to uninformed food choices.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SOLUTION -->
+
+<section class="section tinted">
+
+    <div class="section-title reveal">
+
+        <span>02</span>
+
+        <h2>Our Solution</h2>
+
+    </div>
+
+
+    <div class="solution-layout">
+
+        <div class="visual-card reveal">
+
+            <img
+                src="assets/solution.jpg"
+                alt="Snap Sort solution"
+            >
+
+            <!--<div class="image-caption">
+                Add an image showing the app solving the problem.
+            </div>-->
+
+        </div>
+
+
+        <div class="reveal">
+
+            <p class="large-text">
+                Point. Scan. Understand.
+            </p>
+
+            <p class="muted">
+                Snap Sort provides a simpler way to access food
+                product and nutrition information using AI-powered
+                scanning and explanation.
+            </p>
+
+            <a href="project.html" class="btn primary">
+                See How It Works →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TARGET USERS -->
+
+<section class="section">
+
+    <div class="section-title reveal">
+
+        <span>03</span>
+
+        <h2>Who Is It For?</h2>
+
+    </div>
+
+
+    <div class="audience-grid">
+
+        <div class="audience-card reveal">
+
+            <img
+                src="assets/students.jpg"
+                alt="Students"
+            >
+
+            <div class="audience-content">
+
+                <span>01</span>
+
+                <h3>Students</h3>
+
+                <p>
+                    Students who want to quickly understand
+                    packaged food products.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="audience-card reveal">
+
+            <img
+                src="assets/young-adults.jpg"
+                alt="Young adults"
+            >
+
+            <div class="audience-content">
+
+                <span>02</span>
+
+                <h3>Young Adults</h3>
+
+                <p>
+                    Users who want convenient access to
+                    nutrition and ingredient information.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="audience-card reveal">
+
+            <img
+                src="assets/health-conscious.jpg"
+                alt="Health conscious consumer"
+            >
+
+            <div class="audience-content">
+
+                <span>03</span>
+
+                <h3>Health-conscious Users</h3>
+
+                <p>
+                    People who want to become more aware of
+                    the food products they consume.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEET THE TEAM -->
+
+<section class="section tinted">
+
+    <div class="section-title reveal">
+
+        <span>04</span>
+
+        <h2>Meet the Team</h2>
+
+    </div>
+
+
+    <p class="large-text reveal">
+        The people behind Snap Sort.
+    </p>
+
+
+    <div class="team-grid">
+
+        <div class="team-card reveal">
+
+            <img
+                src="assets/team-member-1.png"
+                alt="Team member"
+            >
+
+            <div>
+
+                <span>CEO (Chief Executive Officer)</span>
+
+                <h3>Ivan Rining Chong Ru Han</h3>
+
+                <p>
+                    Leads the team, makes key decisions, and ensures the project meets its goals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="team-card reveal">
+
+            <img
+                src="assets/team-member-2.png"
+                alt="Team member"
+            >
+
+            <div>
+
+                <span>CTO (Chief Technology Officer)</span>
+
+                <h3>Chong Lok Phen</h3>
+
+                <p>
+                    Oversees technical development, including programming, AI integration, and app functionality.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="team-card reveal">
+
+            <img
+                src="assets/team-member-3.png"
+                alt="Team member"
+            >
+
+            <div>
+
+                <span>CMO (Chief Marketing Officer)</span>
+
+                <h3>Hana Naurah</h3>
+
+                <p>
+                    Handles marketing, branding, promotion, and understanding the target audience.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="team-card reveal">
+
+            <img
+                src="assets/team-member-4.png"
+                alt="Team member"
+            >
+
+            <div>
+
+                <span>COO (Chief Operating Officer)</span>
+
+                <h3>Muhammad Faqih Hazim</h3>
+
+                <p>
+                    Manages daily operations, coordinates team tasks, and ensures the project progresses smoothly.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="team-card reveal">
+
+            <img
+                src="assets/team-member-5.png"
+                alt="Team member"
+            >
+
+            <div>
+
+                <span>CPO (Chief Product Officer)</span>
+
+                <h3>Nurfirdaus Liyana</h3>
+
+                <p>
+                    Focuses on the app’s features, user experience, design, and overall product quality.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK PROJECT OVERVIEW -->
+
+<section class="section">
+
+    <div class="section-title reveal">
+
+        <span>05</span>
+
+        <h2>Project Overview</h2>
+
+    </div>
+
+
+    <div class="overview-grid">
+
+        <div class="overview-card reveal">
+
+            <strong>01</strong>
+
+            <h3>Scan</h3>
+
+            <p>
+                Capture a food product using the smartphone camera.
+            </p>
+
+        </div>
+
+
+        <div class="overview-card reveal">
+
+            <strong>02</strong>
+
+            <h3>Recognise</h3>
+
+            <p>
+                AI processes the product and identifies relevant information.
+            </p>
+
+        </div>
+
+
+        <div class="overview-card reveal">
+
+            <strong>03</strong>
+
+            <h3>Understand</h3>
+
+            <p>
+                Nutrition and ingredient information is presented
+                in a simpler format.
+            </p>
+
+        </div>
+
+
+        <div class="overview-card reveal">
+
+            <strong>04</strong>
+
+            <h3>Analyse</h3>
+
+            <p>
+                Scan data can support future nutrition trends
+                and data analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+    <div class="reveal">
+
+        <span class="eyebrow">
+            DISCOVER THE PROJECT
+        </span>
+
+        <h2>
+            See how Snap Sort was developed.
+        </h2>
+
+        <a href="development.html" class="btn white">
+            View Development Process →
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-brand">
+
+        <img
+            src="assets/logo.png"
+            alt="Snap Sort Logo"
+        >
+
+        <span>Snap Sort</span>
+
+    </div>
+
+    <p>
+        Scan food. Understand more. Make informed choices.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="impact.html">Impact</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="footer-line"></div>
+
+    <small>
+        Mobile App PBL Project • 2026
+    </small>
+
+</footer>
+
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

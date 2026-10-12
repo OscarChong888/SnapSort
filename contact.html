@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snap Sort | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <img src="assets/logo.png" alt="Snap Sort Logo">
+
+        <span>Snap Sort</span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="impact.html">Impact & Future</a>
+        <a href="contact.html" class="active">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button id="themeToggle" class="theme-btn">
+
+            <svg class="sun-icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+
+            <svg class="moon-icon" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+            </svg>
+
+        </button>
+
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="page-hero">
+
+    <div class="reveal">
+
+        <span class="eyebrow">
+            GET IN TOUCH
+        </span>
+
+        <h1>
+            Contact
+            <span>Snap Sort.</span>
+        </h1>
+
+        <p>
+            Have a question, suggestion or feedback?
+            We'd love to hear from you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT INFORMATION -->
+
+<section class="section">
+
+    <div class="section-title reveal">
+
+        <span>01</span>
+
+        <h2>Contact Information</h2>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-info reveal">
+
+            <div class="contact-item">
+
+                <span>✉</span>
+
+                <div>
+
+                    <small>Email</small>
+
+                    <a href="mailto:ivanrining@gmail.com">
+                        ivanrining@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>☎</span>
+
+                <div>
+
+                    <small>Phone</small>
+
+                    <a href="tel:+601110517808">
+                        +60 111-051 7808
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>⌖</span>
+
+                <div>
+
+                    <small>Address</small>
+
+                    <p>
+                        Pusat PERMATA@Pintar Negara, Universiti Kebangsaan Malaysia (UKM), 43600 UKM Bangi, Selangor Darul Ehsan<br>
+                        Malaysia
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEEDBACK -->
+
+        <div class="feedback-box reveal">
+
+            <h3>
+                Send Us Feedback
+            </h3>
+
+            <p class="muted">
+                Tell us what you think about Snap Sort.
+            </p>
+
+
+            <!--
+                IMPORTANT:
+                Replace the action URL below with
+                your Formspree endpoint.
+
+                Example:
+                https://formspree.io/f/YOUR_FORM_ID
+            -->
+
+            <form
+                action="https://formspree.io/f/mvkzrldv"
+                method="POST"
+            >
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                >
+
+
+                <label for="type">
+                    Feedback Type
+                </label>
+
+                <select id="type" name="feedback_type">
+
+                    <option value="general">
+                        General Feedback
+                    </option>
+
+                    <option value="suggestion">
+                        Suggestion
+                    </option>
+
+                    <option value="bug">
+                        Bug Report
+                    </option>
+
+                    <option value="question">
+                        Question
+                    </option>
+
+                </select>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Write your feedback here..."
+                    required
+                ></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn primary"
+                >
+                    Send Feedback →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<footer>
+
+    <div class="footer-brand">
+
+        <img src="assets/logo.png" alt="Snap Sort Logo">
+
+        <span>Snap Sort</span>
+
+    </div>
+
+    <p>
+        Scan food. Understand more. Make informed choices.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+        <a href="project.html">Project</a>
+        <a href="development.html">Development</a>
+        <a href="impact.html">Impact</a>
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+    <div class="footer-line"></div>
+
+    <small>
+        Mobile App PBL Project • 2026
+    </small>
+
+</footer>
+
+
+<button id="backToTop" class="back-to-top">
+    ↑
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
